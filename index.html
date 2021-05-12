@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Nikolas Michae's Portfolio Website">
+    <link rel ="image_src" href="images/preview.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_mobile.css">
+    <title>Nikolas Michael - Home</title>
+</head>
+<body onload='location.href="#top"'>
+    <div id="top"></div>
+    <div id="header">
+        <div id="header-container">
+            <h1>NIKOLAS MICHAEL</h1>
+            <img style="height: 2.8125rem;" id="menu-icon" src="images/menu_icon.png" alt="menu expand">
+            <span id="navLinks">
+                <a href="#top"><p id="home-nav-link" href="">Home</p></a>
+                <p id="project-nav-link">Projects</p>
+                <p id="resume-nav-link">Resume</p>
+                <a href="#contact"><p style="border-right:none;" id="contact-nav-link">Contact</p></a>
+                <div id="exit-menu-row"><div id="exit-menu-button">X</div></div>
+            </span>
+        </div><!--id: header-container div-->
+    </div><!--id: header div-->
+
+    <div id="main-page-content">
+    <div id="carousel">
+        <div class="panel active" style="background-image: url('images/web_design.png');">
+            <h3>Website Development</h3>
+        </div>
+        
+        <div class="panel" style="background-image: url('images/mobile_dev.jpg');">
+            <h3>Mobile Development</h3>
+        </div>
+
+        <div class="panel" style="background-image: url('images/software_dev.png');">
+            <h3>Software Development</h3>
+        </div>
+
+        <div class="panel" style="background-image: url('images/backend_development.jpg');">
+            <h3>Backend Development</h3>
+        </div>
+    </div>
+
+    <div id="about-me-section">
+        <h1>ABOUT ME</h1>
+        <div id="aboutMe">
+            <div id="aboutMeContainer">
+                <img src="images/profile_pic.jpg" id="profilePic" alt="Nikolas Michael">
+                    <p id="aboutMeText">
+                      Hi, my name is Nikolas Michael. I specialize in web design, frontend and backend development, mobile application and software development.
+                      My original expertise is in electrical manufacturing. I have a diploma and many certifications related to electrical and robotic systems.
+                      I have recently switched my focus to programming and have acquired many skills and certifications including the completion of a code bootcamp.
+                      You can see my most recent projects and the source code associated with them in the "Projects" section. If you wish to know more about me and
+                      my skills, you can read more about them in the "Resume" section. My phone number and email are listed below, or you can send me an email directly
+                      from this site. Be sure to leave a review at the bottom on how I could improve my site or any issues you ran into. Thank you!
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="programming-skills-section">
+        <h1>KNOWLEDGEABLE IN</h1>
+        <div id="prgSkills">
+            <div id="prgSkillsContainer">
+                    <img style="height: 7.385rem;" src="images/HTML5_Logo.png" alt="HTML5 Logo" title="HTML5">
+                    <img style="height: 7.4375rem;" src="images/CSS3_logo_min.png" alt="CSS Logo" title="CSS">
+                    <img style="height: 5.95rem;" src="images/Javascript_logo.png" alt="Javascript logo" title="JavaScript">
+                    <img style="height: 5.5625rem;" src="images/jquery_logo_min.png" alt="Jquery logo" title="JQuery">
+                    <img style="height: 2.8125rem;" src="images/php_logo_min.png" alt="PHP logo" title="PHP">
+                    <img style="height: 5.25rem;" src="images/python_logo.png" alt="Python logo" title="Python">
+                    <img style="height: 4.6875rem;" src="images/React_logo_min.png" alt="React logo" title="React">
+                    <img style="height: 3.805rem;" src="images/SQL_logo.png" alt="SQL logo" title="SQL">
+                    <img style="height: 5.613rem;" src="images/angular_logo.png" alt="Angular logo" title="Angular">
+            </div>
+            <p onclick="resumeNavLink.click()">And More...</p>
+        </div>
+    </div>
+
+    <div id="contact-section">
+        <h1>CONTACT</h1>
+        <div id="contact">
+            <div id="contactContainer">
+                <div id="phoneNumber">
+                    <p><b>Phone #:</b></p>
+                    <p><b>647-988-4670</b></p>
+                    <p><b>Email:</b></p>
+                    <p><b>nikolasmichael1996@gmail.com</b></p>
+                </div>
+                <div id="contact-info">
+                        <input id="subject-field" type="text" size="19" name="Contact-Name" placeholder="Subject (100 characters max) THIS COMPONENT IS UNDER MAINTENANCE" maxlength="100">
+                        <input type="email" name="Contact-Email" value="" style="display: none;">
+                        <textarea id="text-area" name="Contact-Message" cols="50" rows="5" class="contactField" 
+                        placeholder="Enter Message Here! (1000 characters max) THIS COMPONENT IS UNDER MAINTENANCE" maxlength="1000"></textarea> 
+                        <button id="submit-btn" type="submit" value="Submit">Submit</button>
+                    <span id="max-length" style="display: none; color: red;">Max character limited reached <span id="subject-max-length" style="display: none;">(Subject)</span> <span id="message-max-length" style="display: none;">(Message)</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><!--main-page-content div-->
+
+    <div id="projects-content">
+        <div id="projects-container">
+
+            <div class="project-links">
+                <a class="website-title" href="https://nikgm.github.io/Nikolas-Michael-Profile/" target="_blank" rel="noopener"><img class="website-images" src="images/main_website.png" alt="main website">
+                <div class="website-desc">
+                    <h1>Personal Website</h1></a>
+                    <div class="programming-tags">
+                        <div class="prg-tag" style="background-color:#e96228; margin-left:0">HTML</div>
+                        <div class="prg-tag" style="background-color:#254bdd;">CSS</div>
+                        <div class="prg-tag" style="background-color:#efd81d;">JavaScript</div>
+                    </div>
+                    <p>
+                        This is my main website, it features my projects, skills and little bit about me.
+                        Everything on this website was built only using vanilla HTML, CSS, JS and PHP. No frameworks, plugins or libraries.
+                        Today the front-end world works on these things and we often forget the possibilities of using just HTML/CSS/JS. I use an
+                        HTTP request form for the email component and a secondary bot email. I have other projects that utilize different front-end & back-end tools
+                        and my wide range of skills.
+                    </p>
+                </div>
+            </div><!--project-links class-->
+
+            <div class="project-links">
+                <a class="website-title" href="https://retributionbyrevenue.github.io/RetributionByRevenue/?fbclid=IwAR3F0zg0HARddETlFscGwCV8QCedlkEf4WWBSZNaNjS_ZGhEMjGQabEg3O8" target="_blank" rel="noopener"><img class="website-images" src="images/rbr_website.png" alt="Mark's Website">
+                <div class="website-desc">
+                   <h1>Mark's Website</h1></a>
+                    <div class="programming-tags">
+                        <div class="prg-tag" style="background-color:#e96228; margin-left:0">HTML</div>
+                        <div class="prg-tag" style="background-color:#254bdd;">CSS</div>
+                        <div class="prg-tag" style="background-color:#efd81d;">JavaScript</div>
+                        <div class="prg-tag" style="background-color:#1d2d39;">jQuery</div>
+                    </div>
+                    <p>
+                        This website was developed for a friend to track the progress of his cryptocurrency investments. Most of the backend
+                        JavaScript was developed by him. I used flexbox to properly place and align each element. The website is currently mobile
+                        friendly, the chart was produced using a plug-in called ApexChart (however, I plan on making my own plugin in the future),
+                        elements are called using jQuery, all data is called from a google docs sheet and called using AJAX. All financial numbers
+                        displayed are fictitious and the customer has expressed consent to display his website.
+                    </p>
+                </div>
+            </div><!--project-links class-->
+
+            <div class="project-links">
+                <a class="website-title" href="https://nikgm.github.io/quote-generator/" target="_blank" rel="noopener"><img class="website-images" src="images/quote_generator.png" alt="Quote Generator Website">
+                <div class="website-desc">
+                    <h1>Quote Generator</h1></a>
+                    <div class="programming-tags">
+                        <div class="prg-tag" style="background-color:#e96228; margin-left:0">HTML</div>
+                        <div class="prg-tag" style="background-color:#254bdd;">CSS</div>
+                        <div class="prg-tag" style="background-color:#563d7c;">Bootstrap</div>
+                        <div class="prg-tag" style="background-color:#1d2d39;">jQuery</div>
+                    </div>
+                    <p>
+                        This website is a random quote generator website using Bootstrap as a framework. Quotes are placed in an object array
+                        and using a function, I can call upon a random quote and place it into the HTML element using jQuery. <b>(STILL UNDER MAINTENANCE FOR MOBILE)</b>
+                    </p>
+                </div>
+            </div><!--project-links class-->
+            <a id="github-link" href="https://github.com/Nikgm" target="_blank" rel="noopener"><img id="github-logo" src="images/github_logo.png" alt="github logo"> LINK TO GITHUB!</a>
+        </div><!--projects-container id-->
+    </div><!--projects-content-->
+
+    <div id="resume-content">
+        <h1>RESUME</h1>
+        <iframe src="resume.html" frameborder="0" id="resume"></iframe>
+        <p id="pdf-link"><b>Download PDF Version <span id="pdf-text"></span></b></p>
+    </div>
+
+    <div id="footer">
+        <div id="footerContainer">
+            <p>Nikolas Michael</p>
+            <p>Last Updated: May 6, 2021</p>
+            <a href="#top">BACK TO TOP</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
