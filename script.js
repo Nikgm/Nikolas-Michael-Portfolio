@@ -78,14 +78,6 @@ function removeActiveClasses() {
     })
 }
 
-/*RESUME SECTION*/
-const pdfLink = document.getElementById('pdf-link');
-const pdfText = document.getElementById('pdf-text');
-
-pdfLink.addEventListener('click', ()=>{
-    pdfText.innerHTML = '(This link does nothing :P)'
-})
-
 /*CONTACT FORM*/
 const subjectField = document.getElementById('subject-field');
 const maxLength = document.getElementById('max-length');

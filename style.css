@@ -306,13 +306,17 @@ textarea {
     display: block;
     margin: 0 auto;
 }
-#resume-content p {
+#resume-content a{
     font-family: "Lexend Mega", sans-serif;
     display: block;
     margin: 0 auto;
     width: 80%;
     cursor: pointer;
 }
+#resume-content a, #resume-content a:hover, #resume-content a:visited{
+    color: black;
+    text-decoration: none;
+} 
 #footer {
     height: 4rem;
     background-color: grey;
