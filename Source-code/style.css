@@ -230,6 +230,7 @@ textarea {
     width: 70%;
 }
 .project-links {
+    font-family: Montserrat, sans-serif;
     overflow: auto;
     padding-top: 2rem;
 }

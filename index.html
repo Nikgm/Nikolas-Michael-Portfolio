@@ -21,29 +21,29 @@
                 <p id="project-nav-link">Projects</p>
                 <p id="resume-nav-link">Resume</p>
                 <a href="#contact"><p style="border-right:none;" id="contact-nav-link">Contact</p></a>
-                <div id="exit-menu-row"><div id="exit-menu-button">X</div></div>
+                <div id="exit-menu-row"><div id="exit-menu-button" style="display: none;">X</div></div>
             </span>
         </div><!--id: header-container div-->
     </div><!--id: header div-->
 
     <div id="main-page-content">
-    <div id="carousel">
-        <div class="panel active" style="background-image: url('images/web_design.png');">
-            <h3>Website Development</h3>
-        </div>
-        
-        <div class="panel" style="background-image: url('images/mobile_dev.jpg');">
-            <h3>Mobile Development</h3>
-        </div>
+        <div id="carousel">
+            <div class="panel active" style="background-image: url('images/web_design.png');">
+                <h3>Website Development</h3>
+            </div>
+            
+            <div class="panel" style="background-image: url('images/mobile_dev.jpg');">
+                <h3>Mobile Development</h3>
+            </div>
 
-        <div class="panel" style="background-image: url('images/software_dev.png');">
-            <h3>Software Development</h3>
-        </div>
+            <div class="panel" style="background-image: url('images/software_dev.png');">
+                <h3>Software Development</h3>
+            </div>
 
-        <div class="panel" style="background-image: url('images/backend_development.jpg');">
-            <h3>Backend Development</h3>
-        </div>
-    </div>
+            <div class="panel" style="background-image: url('images/backend_development.jpg');">
+                <h3>Backend Development</h3>
+            </div>
+        </div><!--id: carousel div-->
 
     <div id="about-me-section">
         <h1>ABOUT ME</h1>
@@ -51,16 +51,17 @@
             <div id="aboutMeContainer">
                 <img src="images/profile_pic.jpg" id="profilePic" alt="Nikolas Michael">
                     <p id="aboutMeText">
-                      Hi, my name is Nikolas Michael. I specialize in web design, frontend and backend development, mobile application and software development.
-                      My original expertise is in electrical manufacturing. I have a diploma and many certifications related to electrical and robotic systems.
-                      I have recently switched my focus to programming and have acquired many skills and certifications including the completion of a code bootcamp.
-                      You can see my most recent projects and the source code associated with them in the "Projects" section. If you wish to know more about me and
-                      my skills, you can read more about them in the "Resume" section. My phone number and email are listed below, or you can send me an email directly
-                      from this site. Be sure to leave a review at the bottom on how I could improve my site or any issues you ran into. Thank you!
+                      Hi, my name is Nikolas Michael. I specialize in web design, frontend and backend development, mobile application and graphic design.
+                      I initially went to university for business studies. In that program, I fell in love with a web application course and afterwards tansfered to
+                      Seneca College for a Computer Programming diploma. Since then, I have switched my focus to programming and have acquired many skills and certifications 
+                      including the completion of a code bootcamp. My hobbies lie in the creative and design aspects of programming. Creating appealing and human-centric UI/UX 
+                      designs to help clients connect better with their customers. You can see my most recent projects and the source code associated with them in the 
+                      "Projects" section. If you wish to know more about me and my skills, you can read more about them in the "Resume" section. My phone number and email 
+                      are listed below, or you can send me an email directly from this site. Be sure to leave a review at the bottom on how I could improve my site or any issues you ran into. Thank you!
                     </p>
-            </div>
-        </div>
-    </div>
+            </div><!--id: aboutMeContainer div-->
+        </div><!--id: aboutMe div-->
+    </div><!--id: about-me-section div-->
 
     <div id="programming-skills-section">
         <h1>KNOWLEDGEABLE IN</h1>
@@ -117,7 +118,7 @@
                     </div>
                     <p>
                         This is my main website, it features my projects, skills and little bit about me.
-                        Everything on this website was built only using vanilla HTML, CSS, JS and PHP. No frameworks, plugins or libraries.
+                        Everything on this website was built only using vanilla HTML, CSS, and JS. No frameworks, plugins or libraries.
                         Today the front-end world works on these things and we often forget the possibilities of using just HTML/CSS/JS. I use an
                         HTTP request form for the email component and a secondary bot email. I have other projects that utilize different front-end & back-end tools
                         and my wide range of skills.
@@ -157,11 +158,62 @@
                     </div>
                     <p>
                         This website is a random quote generator website using Bootstrap as a framework. Quotes are placed in an object array
-                        and using a function, I can call upon a random quote and place it into the HTML element using jQuery. <b>(STILL UNDER MAINTENANCE FOR MOBILE)</b>
+                        and using a function, I can call upon a random quote and place it into the HTML element using jQuery. With each time,
+                        the "Show Another Quote" button is pressed, the <b>(Mobile display for this website is under maintenance)</b>
+                    </p>
+                </div>
+            </div><!--project-links class-->
+
+            <div class="project-links">
+                <a class="website-title"><img id="open-library-photo" class="website-images" src="images/open_library.png" alt="Open Library API">
+                <div class="website-desc">
+                    <h1 style="cursor: default;">Open Library API</h1></a>
+                    <div class="programming-tags">
+                        <div class="prg-tag" style="background-color:#e96228; margin-left:0">HTML</div>
+                        <div class="prg-tag" style="background-color:#254bdd;">CSS</div>
+                        <div class="prg-tag" style="background-color:#00CEF7;">React</div>
+                        <div class="prg-tag" style="background-color:#1d2d39;">jQuery</div>
+                        <div class="prg-tag" style="background-color:grey;">API</div>
+                    </div>
+                    <p>
+                        This website was inspired by a program I did for a coding test for a large financial institution. It takes the API from 
+                        <a href="https://openlibrary.org">openlibrary.org</a> and can search for a book either by the author, title or ISBN. The 
+                        website also has a lot of accessibility tools such as font resizing, dark mode and print page. Since the website, is a react app
+                        it's not possible for me to host the website using github pages. Hosting will take place on Heroku but it's still currently a work in
+                        progress. <b style="cursor: pointer;" onclick="openLibraryPhoto.click()">(Watch a video to see how the website works)</b>
+                    </p>
+                </div>
+            </div><!--project-links class-->
+
+            
+            <div class="project-links">
+                <a class="website-title"><img id="pagination-photo" class="website-images" src="images/pagination_website.png" alt="Open Library API">
+                <div class="website-desc">
+                    <h1 style="cursor: default;">Pagination and Filtering</h1></a>
+                    <div class="programming-tags">
+                        <div class="prg-tag" style="background-color:#254bdd; margin-left:0">CSS</div>
+                        <div class="prg-tag" style="background-color:#00CEF7;">React</div>
+                        <div class="prg-tag" style="background-color:#efd81d;">JavaScript</div>
+                    </div>
+                    <p>
+                        For this website, I created a JSON file for the react application to call data from. It displays this data in a grid and sorts the
+                        data into an appropriate amount of pages. Everytime the page is refreshed, the webstie will randomize the display of applicants. CSS also
+                        appropriately displays only the info that is given and a silhouette if no picture is given. All info and pictures displayed are fictitious and/or 
+                        AI generated. Since the website, is a react app it's not possible for me to host the website using github pages. Hosting will take place on 
+                        Heroku but it's still currently a work in progress. <b style="cursor: pointer;" onclick="paginationPhoto.click()">(Watch a video to see how the website works)</b>
                     </p>
                 </div>
             </div><!--project-links class-->
             <a id="github-link" href="https://github.com/Nikgm" target="_blank" rel="noopener"><img id="github-logo" src="images/github_logo.png" alt="github logo"> LINK TO GITHUB!</a>
+            <div id="overlay">
+                <video width="600" controls>
+                    <source src="images/react_pagination.mp4" type="video/mp4">
+                </video>
+                <video width="600" controls>
+                    <source src="images/react_library.mp4" type="video/mp4">
+                </video>
+                <div id="exit-video-btn" style="margin-top: 1rem; padding: 0.7rem">X</div>
+            </div>
         </div><!--projects-container id-->
     </div><!--projects-content-->
 
@@ -174,8 +226,9 @@
     <div id="footer">
         <div id="footerContainer">
             <p>Nikolas Michael</p>
-            <p>Last Updated: May 6, 2021</p>
+            <p>Last Updated: May 19, 2021</p>
             <a href="#top">BACK TO TOP</a>
+            <p style="float: right;">Leave a review</p>
         </div>
     </div>
     <script src="script.js"></script>

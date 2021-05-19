@@ -122,3 +122,23 @@ textArea.addEventListener('keydown',()=>{
         subjectMaxLength.style.display = 'none'
     }
 })
+
+const paginationPhoto = document.getElementById('pagination-photo');
+const openLibraryPhoto = document.getElementById('open-library-photo');
+const videoExitBtn = document.getElementById('exit-video-btn');
+console.log(document.getElementsByTagName('source')[0])
+paginationPhoto.addEventListener('click' , function(){
+    document.getElementsByTagName('video')[0].currentTime = 0;
+    document.getElementsByTagName('video')[0].style.display = 'initial'
+    document.getElementsByTagName('video')[1].style.display = 'none'
+    document.getElementById("overlay").style.display = "flex";
+}) ; 
+openLibraryPhoto.addEventListener('click' , function(){
+    document.getElementsByTagName('video')[1].currentTime = 0;
+    document.getElementsByTagName('video')[1].style.display = 'initial'
+    document.getElementsByTagName('video')[0].style.display = 'none'
+    document.getElementById("overlay").style.display = "flex";
+}) ; 
+videoExitBtn.addEventListener('click',function(){
+    document.getElementById("overlay").style.display = "none";
+})
