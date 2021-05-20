@@ -61,8 +61,7 @@ a:visited {
     text-align: center;
     padding-top: 0.5rem;
 }
-#exit-menu-button {
-    display: none;
+#exit-menu-button, #exit-video-btn{
     border: 2px solid #000;
     border-radius: 50%;
     font-family: Montserrat, sans-serif;
@@ -279,6 +278,22 @@ textarea {
     margin-right: 0.5rem;
     width: 4rem;
 }
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
 #resume-content {
     margin-top: 5%;
     margin-bottom: 1rem;
@@ -291,13 +306,19 @@ textarea {
     display: block;
     margin: 0 auto;
 }
-#resume-content p {
+#resume-content a{
     font-family: "Lexend Mega", sans-serif;
     display: block;
     margin: 0 auto;
     width: 80%;
     cursor: pointer;
 }
+#resume-content a, 
+#resume-content a:hover, 
+#resume-content a:visited{
+    color: black;
+    text-decoration: none;
+} 
 #footer {
     height: 4rem;
     background-color: grey;
